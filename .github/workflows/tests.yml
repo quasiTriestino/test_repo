@@ -31,5 +31,3 @@ jobs:
         python -m pip install tox tox-gh-actions pytest
     - name: Test with tox
       run: tox
-      env:
-        PLATFORM: ${{ matrix.os }}
