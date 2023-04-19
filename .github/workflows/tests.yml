@@ -21,7 +21,7 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
     - name: Set TEST_DIR environment variable
-      run: echo "TEST_DIR=$(pwd)/tests"
+      run: echo "TEST_DIR=$(pwd)"
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
